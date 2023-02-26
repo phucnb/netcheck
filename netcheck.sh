@@ -9,23 +9,27 @@
 VAR_SCRIPTNAME=`basename "$0"`
 VAR_SCRIPTLOC="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
 VAR_CONNECTED=true
-VAR_LOGFILE=log/connection.log
-VAR_SPEEDTEST_DISABLED=false
+VAR_LOGFILE=log/connection1.log
+VAR_SPEEDTEST_DISABLED=true
 VAR_CHECK_TIME=5
-VAR_HOST=http://www.google.com
+VAR_HOST=http://odoo.phucnb.com
 VAR_ENABLE_WEBINTERFACE=false
 VAR_ENABLE_ALWAYS_SPEEDTEST=false
 VAR_WEB_PORT=9000
 VAR_CUSTOM_WEB_PORT=false
+VAR_ACT_ON_DISCONNECT=true
+VAR_ACT_ON_RECONNECT=true
+VAR_DISCONNECT_SCRIPT=sample-scripts/disconnected.sh
+VAR_RECONNECT_SCRIPT=sample-scripts/reconnected.sh
 
 COLOR_RED="\033[31m"
 COLOR_GREEN="\033[32m"
 COLOR_CYAN="\033[36m"
 COLOR_RESET="\033[0m"
 
-STRING_1="LINK RECONNECTED:                               "
-STRING_2="LINK DOWN:                                      "
-STRING_3="TOTAL DOWNTIME:                                 "
+STRING_1="INTERNET RECONNECTED:"
+STRING_2="INTERNET DOWN:"
+STRING_3="TOTAL DOWNTIME:"
 STRING_4="RECONNECTED LINK SPEED:                         "
 STRING_5="CONNECTED LINK SPEED:                           "
 
