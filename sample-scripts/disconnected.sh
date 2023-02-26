@@ -1,2 +1,2 @@
 #!/bin/bash
-espeak-ng "Disconnected!"
+python sms.py
